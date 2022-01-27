@@ -1,0 +1,247 @@
+.dashboard {
+  max-width: 1800px;
+  background: var(--dark-blue);
+}
+.dashboard-wrapper {
+  padding: 6rem 2rem 2rem 2rem;
+}
+
+.dashboard-name-details {
+  margin-bottom: 1.5rem;
+}
+
+.search2 {
+  background: var(--light-blue);
+  padding: 1rem;
+  display: flex;
+  max-width: 200px;
+  margin: 6rem 6rem 0 auto;
+  border-radius: 4px;
+}
+.search2 svg {
+  margin-right: 2rem;
+}
+.search2 input {
+  background: var(--light-blue);
+  border: none;
+  outline: none;
+  color: whitesmoke;
+}
+.search2 input::placeholder {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+dataResult {
+  margin-top: 5px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.dashboard-name-details p {
+  font-size: 1.4rem;
+}
+.dashboard-name {
+  font-size: clamp(3.6rem, 5rem, 8rem);
+  font-family: "CamptonBold", sans-serif;
+}
+.dashboard-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-box {
+  background-color: var(--light-blue);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  position: relative;
+  max-width: 400px;
+  margin: 1rem auto;
+  flex-basis: 100%;
+  transition: 300ms;
+}
+.dashboard-box:hover {
+  transform: scale(1.05);
+}
+.dashboard-box-img {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.dashboard-box-img p {
+  margin-left: 2rem;
+  color: #8c9298;
+}
+.dashboard-number {
+  font-size: clamp(4.8rem, 5rem, 8rem);
+  font-family: "CamptonMedium", sans-serif;
+  margin-top: 3.2rem;
+}
+.rect {
+  position: absolute;
+  background: #fad202;
+  width: 7px;
+  height: 61px;
+  top: 0;
+  right: 13px;
+}
+.rect1 {
+  right: 26px;
+  height: 46px;
+}
+.danger {
+  background: #ea1601;
+}
+.success {
+  background: #64bc26;
+}
+.teal {
+  background: #5ac8fa;
+}
+.dashboard-activity {
+  padding: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.dashboard-title {
+  font-size: clamp(1.2rem, 1.4rem, 3rem);
+  margin-bottom: 1.4rem;
+}
+.recent-classes {
+  max-width: 850px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.recent-classes-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #000000c4;
+  padding: 0.5rem 1rem;
+  color: #8c9298;
+}
+.recent-classes-title {
+  font-family: "CamptonMedium", sans-serif;
+  font-size: 1.4rem;
+  color: whitesmoke;
+}
+.recent-forum {
+  max-width: 850px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.recent-forum-box {
+  background: var(--light-blue);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+}
+.recent-forum-box p {
+  font-size: 1.4rem;
+  font-family: "Pangram-Medium", sans-serif;
+  padding: 2rem 0;
+  border-bottom: 1px #8c9298 solid;
+}
+.links-forum {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "Pangram-Light", sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.links-forum svg {
+  margin-left: 2rem;
+}
+.recent-forum-blue {
+  background: var(--blue);
+  position: relative;
+  border-radius: 5px;
+  margin: 2rem auto 0 auto;
+  -webkit-box-shadow: 1px 15px 15px -9px rgba(90, 200, 250, 0.7);
+  box-shadow: 1px 15px 15px -9px rgba(90, 200, 250, 0.7);
+}
+
+.blue-box {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2.4rem;
+}
+.blue-box-img svg {
+  width: 40px;
+}
+.blue-box-text {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  font-family: "Pangram-Medium", sans-serif;
+}
+.recent-forum-blue .links-forum {
+  padding-left: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .dashboard-box {
+    max-width: 300px;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .dashboard-box {
+    max-width: 250px;
+  }
+  .recent-forum {
+    max-width: 850px;
+    margin: 0rem auto;
+    position: relative;
+  }
+  .recent-classes {
+    max-width: 850px;
+    margin: 0rem auto;
+    position: relative;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .dashboard-box {
+    max-width: 400px;
+    padding: 4rem 5.5rem;
+    border-radius: 12px;
+  }
+
+  .dashboard-box-img {
+    font-size: 2rem;
+  }
+  .recent-classes-title {
+    font-size: 1.6rem;
+  }
+  .dashboard-box-img svg {
+    width: 36px;
+    height: 48px;
+  }
+  .rect {
+    width: 20px;
+    height: 200px;
+    right: 13px;
+  }
+  .rect1 {
+    right: 60px;
+    height: 100px;
+  }
+}

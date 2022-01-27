@@ -1,0 +1,156 @@
+.navbar {
+  background: #192531;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.profile-summary {
+  display: none;
+}
+.profile img {
+  width: 48px;
+  border-radius: 50%;
+}
+.search {
+  background: #192531;
+  min-height: 30px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.8s;
+}
+.search:hover input {
+  width: 100px;
+}
+.search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 0px;
+  transition: 0.8s;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.name {
+  display: none;
+}
+
+.svg {
+  transition: 300ms;
+}
+.links {
+  font-size: 1.4rem;
+}
+
+.active svg {
+  opacity: 1;
+  transition: 300ms;
+}
+.links:hover svg {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  .aside {
+    background: var(--light-blue);
+    min-height: 100vh;
+  }
+  .navbar {
+    position: relative;
+    padding: 0;
+  }
+  .list {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 1rem 0rem 1rem 2rem;
+    margin: 1rem auto;
+    transition: 300ms;
+    font-size: 3rem;
+  }
+
+  .links svg {
+    width: 21px;
+  }
+  .logout {
+    position: absolute;
+    bottom: -60%;
+    cursor: pointer;
+  }
+  .name {
+    display: block;
+    flex-basis: 100%;
+    margin-left: 2.4rem;
+    color: #505a64;
+    font-size: clamp(1.4rem, 1.6rem, 5rem);
+    font-family: "Pangram-Regular";
+    transition: 300ms;
+  }
+  .active {
+    background: var(--blue);
+    border-radius: 4px;
+    transition: 300ms;
+  }
+  .active .name {
+    color: whitesmoke;
+  }
+  .links:hover {
+    background: var(--blue);
+    border-radius: 4px;
+    padding: 1rem;
+  }
+  .links:hover .name {
+    color: whitesmoke;
+  }
+  .search {
+    display: none;
+  }
+  .profile {
+    padding: 0;
+    margin: 6rem auto 2rem auto;
+  }
+  .profile-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem;
+
+    text-decoration: none !important;
+  }
+  .profile-summary {
+    display: block;
+    margin-left: 2rem;
+    font-family: "Pangram-Regular", sans-serif;
+    color: whitesmoke;
+    font-size: clamp(1.4rem, 1.6rem, 5rem);
+    text-transform: capitalize;
+  }
+  .profile-name {
+    font-size: 1.8rem;
+    font-family: "Pangram-Bold", sans-serif;
+  }
+}

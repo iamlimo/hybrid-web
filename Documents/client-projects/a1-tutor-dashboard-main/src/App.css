@@ -1,0 +1,159 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --dark-blue: #0d1a26;
+  --light-blue: #192531;
+  --blue: #5ac8fa;
+  --blues: #4081bf;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "CamptonBook";
+  src: local("CamptonBook"), url("./fonts/CamptonBook.woff") format("woff");
+}
+@font-face {
+  font-family: "CamptonMedium";
+  src: local("CamptonMedium"), url("./fonts/CamptonMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "AccordAlternate-Medium";
+  src: local("AccordAlternate-Medium"),
+    url("./fonts/AccordAlternate-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "CamptonBold";
+  src: local("CamptonBold"), url("./fonts/CamptonBold.woff") format("woff");
+}
+@font-face {
+  font-family: "AccordAlternate-Bold";
+  src: local("AccordAlternate-Bold"),
+    url("./fonts/AccordAlternate-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "AccordAlternate-ExtraBold";
+  src: local("AccordAlternate-ExtraBold"),
+    url("./fonts/AccordAlternate-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "CamptonSemiBold";
+  src: local("CamptonSemiBold"),
+    url("./fonts/CamptonSemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pangram-Regular";
+  src: local("Pangram-Regular"),
+    url("./fonts/Pangram-Regular.otf") format("woff");
+}
+@font-face {
+  font-family: "Pangram-Light";
+  src: local("Pangram-Light"), url("./fonts/Pangram-Light.otf") format("woff");
+}
+@font-face {
+  font-family: "Pangram-Bold";
+  src: local("Pangram-Bold"), url("./fonts/Pangram-Bold.otf") format("woff");
+}
+@font-face {
+  font-family: "Pangram-Medium";
+  src: local("Pangram-Medium"), url("./fonts/Pangram-Medium.otf") format("woff");
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  font-family: CamptonBook, sans-serif;
+  background: var(--dark-blue);
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+.subjects-btn {
+  padding: 0.5em 1em;
+  background: var(--light-blue);
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: "AccordAlternate-Medium", sans-serif;
+}
+.subjects-btn + .subjects-btn {
+  margin-left: 1rem;
+}
+.active-btn {
+  color: var(--blue);
+  background: rgba(90, 200, 250, 0.06);
+}
+.loading {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 1200px) {
+  .app {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 2560px;
+    margin: 0 auto 0 0;
+    background: var(--dark-blue);
+  }
+  .subjects-btn {
+    padding: 0.5em 1em;
+    font-size: 1.6rem;
+  }
+}

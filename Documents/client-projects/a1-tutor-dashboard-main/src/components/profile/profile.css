@@ -1,0 +1,354 @@
+.profile-main {
+  background: #f3f7fb;
+  color: #0d1a26;
+  padding: 4rem 0 10rem 0;
+  max-width: 1200px;
+}
+.profile-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.profile-content-1 {
+  position: relative;
+  padding: 0 2rem;
+  background: #f3f7fb;
+}
+.profile-blue {
+  display: none;
+}
+
+.profile-main-img {
+  max-width: 137px;
+  margin: 0 auto;
+}
+.img-main1 {
+  border-radius: 50%;
+}
+.img-main2 {
+  position: absolute;
+  left: 57%;
+  top: 36%;
+}
+.profile-main-name {
+  max-width: 137px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Pangram-Regular", sans-serif;
+  color: #808891;
+}
+.profile-main-name h3 {
+  color: #0d1a26;
+  margin: 1.5rem 0 0.5rem 0;
+  font-family: "Pangram-Bold", sans-serif;
+  font-size: 1.6rem;
+}
+.profile-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.profile-item {
+  transition: 300ms;
+}
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+  color: #808891;
+  padding: 1em;
+  transition: 300ms;
+}
+.profile-link svg {
+  width: 24px;
+}
+.profile-link span {
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  display: none;
+}
+
+/* .profile-item:hover {
+  background: #e1e9f0;
+} */
+.profile-item:hover .pro-svg {
+  fill: black;
+}
+.profile-item:hover .profile-link span {
+  color: black;
+}
+.profile-active {
+  color: black;
+  padding: 1rem;
+}
+.profile-item .profile-active {
+  background: #e1e9f0;
+}
+.profile-active .pro-svg {
+  fill: black;
+}
+
+.profile-form-wrapper {
+  background: #e1e9f0;
+  padding: 2rem;
+}
+.profile-form-control {
+  margin-bottom: 1rem;
+}
+.profile-form-control input,
+.profile-form-control select {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: #d6dfe6;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.profile-form-control label,
+.profile-form-control option {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+.profile-btn {
+  cursor: pointer;
+  padding: 1.6rem 6rem;
+  color: #f4f7fb;
+  font-size: 1.6rem;
+  background: #5ac8fa;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 15px 15px -9px rgba(90, 200, 250, 0.7);
+  box-shadow: 1px 15px 15px -9px rgba(90, 200, 250, 0.7);
+  transition: 300ms;
+}
+.profile-btn:hover {
+  opacity: 0.8;
+}
+.subscription {
+  font-family: "Pangram-Regular", sans-serif;
+}
+
+.subscription-text {
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+.subscription-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.subscription-text-btn {
+  cursor: pointer;
+  background: #e4d6e1;
+  color: #ff2d55;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 1em;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+.wee {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+.wee p {
+  font-size: 1.5rem;
+}
+.text-btn {
+  background: #e4d6e1;
+  color: #ff2d55;
+  display: inline-block;
+}
+
+.subscription-box {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 330px;
+  margin: 0 auto 2rem auto;
+  flex-basis: 100%;
+}
+.subscription-box-text {
+  text-align: center;
+}
+.subscription-box-text h1 {
+  font-family: "Pangram-Bold", sans-serif;
+}
+
+.sub-bold {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+.subscription-box-text p {
+  padding: 2rem 0 1rem 0;
+}
+.subscription-list {
+  list-style: none;
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.subscription-item::before {
+  content: url(../../images/check-circle.svg);
+  padding: 2px 12px 2px 5px;
+}
+.subscription-item {
+  padding: 1.4rem 0;
+}
+.sub-btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 1.7rem 2rem;
+  font-size: 1.4rem;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  background: #64bc26;
+}
+
+.sub-btn:hover {
+  opacity: 0.8;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.3rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: "Pangram-Regular", sans-serif;
+}
+tr:nth-child(1) {
+  background: #0d1a26;
+  color: whitesmoke;
+  font-family: "Pangram-Medium", sans-serif;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 1.5rem 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #d6dfe6;
+}
+tr {
+  background: #ccd4dc;
+}
+
+@media only screen and (min-width: 768px) {
+  .profile-wrapper {
+    max-width: 800px;
+  }
+  .profile-form-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .profile-form-wrapper {
+    border-radius: 10px;
+  }
+  .profile-form-control {
+    flex-basis: 100%;
+  }
+  .profile-form-control + .profile-form-control {
+    margin-left: 4rem;
+  }
+  .img-main2 {
+    position: absolute;
+    left: 55%;
+    top: 36%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .profile-main {
+    padding: 0;
+    background: none;
+    position: relative;
+  }
+  .profile-wrapper {
+    max-width: 2000px;
+    display: flex;
+    background: #f3f7fb;
+    margin: 2rem;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 0%;
+    right: 10%;
+  }
+  .profile-blue {
+    display: block;
+  }
+  .profile-form-box {
+    margin: 3rem 0;
+  }
+  .profile-list {
+    max-width: 300px;
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+  .profile-link span {
+    display: block;
+  }
+
+  .profile-link {
+    width: 100%;
+    padding: 1.5rem 10rem 1.5rem 2rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .profile-content-1 {
+    border-radius: 20px;
+  }
+  .profile-form-wrapper {
+    flex-basis: 100%;
+    border-radius: 20px;
+  }
+  .img-main2 {
+    position: absolute;
+    left: 62%;
+    top: 20%;
+  }
+  .subscription-group {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .subscription-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .subscription-box {
+    max-width: 260px;
+    position: relative;
+    padding: 0 1em;
+  }
+  .sub-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .subscription-item::before {
+    padding: 5px;
+  }
+}
