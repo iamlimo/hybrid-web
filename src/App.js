@@ -3,7 +3,7 @@ import Signin from "./auth/Signin";
 import Login from "./auth/Login";
 import Recover from "./auth/Recover";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Success from "./auth/Success";
+import Prompt from "./auth/Prompt";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={ <Signin />} />
           <Route path="/login" element={<Login />} />
           <Route path="/recover" element={<Recover /> } />
-          <Route path="/success" element={<Success /> } />
+          <Route path="/prompt" element={<Prompt /> } />
         </Routes>
       </Router>
 

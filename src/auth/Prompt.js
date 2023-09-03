@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../components/buttons/Button";
 
-function Success() {
+function Prompt() {
   return (
     <div>
       <div className=" bg-[#FFF6DE]  ">
@@ -19,4 +19,4 @@ function Success() {
   );
 }
 
-export default Success;
+export default Prompt;
