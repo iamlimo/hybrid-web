@@ -1,12 +1,11 @@
 import React from "react";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="flex items-center justify-center w-screen h-screen">
-      <h1 className="text-3xl font-bold underline">
-          Hello world!
-      </h1>
-    </div>
+    <>
+      <HomePage/>
+    </>
   );
 }
 
