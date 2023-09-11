@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'hybrid': '#FFF6DE',
+        'primary': '#1338BE',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
