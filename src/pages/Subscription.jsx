@@ -7,6 +7,13 @@ import { BarChart } from '../components/BarChart'
 import PercentageChart from '../components/PercentageChart'
 
 const Subscription = () => {
+
+    const data = [
+        { name: 'Declined', value: 50 },
+        { name: 'Pending', value: 50, fill: 'rgba(240, 103, 3, 1)' },
+        { name: 'Successful', value: 40, fill: 'rgba(151, 71, 255, 1)' },
+      ];
+
   return (
     <div className='flex text-primary'>
       <Navbar />
@@ -124,19 +131,36 @@ const Subscription = () => {
             </div>
             <div className='w-72 flex flex-col mt-4'>
                 <div className="flex justify-between ml-5">
-                    <h1 className="text-primary text-lg font-md">Monthly Performance</h1>
+                    <h1 className="text-primary text-lg font-medium">Monthly Performance</h1>
                 </div>
                 <BarChart/>
             </div>
-            <div className='flex w-72 h-40'>
-              <PercentageChart fill='rgba(181, 18, 18, 1)' text='70%'/>
-              <PercentageChart fill='rgba(255, 214, 114, 1)' text='60%' />
+
+
+            <div className='w-full h-40 mt-5'>
+                <div className="flex justify-between ml-5 w-72">
+                    <h1 className='text-xl font-medium'>Statistics</h1>
+                    <p>2023</p>
+                </div>
+                <div className='w-72 flex h-48'>
+                <PercentageChart className='items-center' fill='rgba(181, 18, 18, 1)' text='' data={data} innerRadius={70} outerRadius={80}/>
+                <div className="flex flex-col justify-center">
+                    <div className="flex items-center">
+                        <span className="w-5 h-2.5 rounded-lg bg-[rgba(161,18,18,1)]"></span>
+                        <h1 className='text-xs ml-2'>Declined</h1>
+                    </div>
+                    <div className="flex items-center mt-4">
+                        <span className="w-5 h-2.5 rounded-lg bg-[#F06703]"></span>
+                        <h1 className='text-xs ml-2'>Pending</h1>
+                    </div>
+                    <div className="flex items-center mt-4">
+                        <span className="w-5 h-2.5 rounded-lg bg-[#9747FF]"></span>
+                        <h1 className='text-xs ml-2'>Successful</h1>
+                    </div>
+                </div>
+                </div>
             </div>
-
         </div>
-
-
-
     </div>
   )
 }

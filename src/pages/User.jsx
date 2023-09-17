@@ -9,6 +9,11 @@ import { BarChart } from '../components/BarChart'
 import PercentageChart from '../components/PercentageChart'
 
 const User = () => {
+    const data = [
+        { name: 'Red', value: 70 },
+        { name: 'Transparent', value: 30, fill: 'rgba(256, 256, 256' },
+      ];
+
   return (
     <div className='flex text-primary'>
       <Navbar />
@@ -78,7 +83,7 @@ const User = () => {
         </div>
     </div>
 
-        <div className="hidden xl:flex xl:flex-col xl:w-2/12 xl:ml-20">
+        <div className="hidden xl:flex xl:flex-col xl:w-2/12 xl:ml-16">
             <div className="flex flex-col items-center p-12 pb-6 w-full border-b-[0.5px] border-[rgba(19,56,190,0.1)]">
                 <img src={joseph} alt="joseph" className='w-14 h-14
                  rounded-full'/>
@@ -104,8 +109,8 @@ const User = () => {
                 <BarChart/>
             </div>
             <div className='flex w-full h-40'>
-              <PercentageChart fill='rgba(181, 18, 18, 1)' text='70%'/>
-              <PercentageChart fill='rgba(255, 214, 114, 1)' text='60%' />
+            <PercentageChart fill='rgba(181, 18, 18, 1)' text='70%' data={data} innerRadius={40} outerRadius={50}/>
+            <PercentageChart fill='rgba(255, 214, 114, 1)' text='60%' data={data} innerRadius={40} outerRadius={50}/>
             </div>
 
         </div>

@@ -1,22 +1,14 @@
 import React from 'react';
 import { PieChart, Pie, ResponsiveContainer } from 'recharts';
 
-const data = [
-  { name: 'Red', value: 70 },
-  { name: 'Transparent', value: 30, fill: 'rgba(256, 256, 256' },
-];
-
-
-const PercentageChart = ({fill, text}) => {
+const PercentageChart = ({fill, text, data, innerRadius, outerRadius}) => {
   return (
-    <ResponsiveContainer width="70%" height="70%">
-      <PieChart width={400} height={400}>
+    <ResponsiveContainer width="100%" height={200}>
+      <PieChart>
         <Pie
           data={data}
-          cx="50%"
-          cy="50%"
-          innerRadius={40}
-          outerRadius={50}
+          innerRadius={innerRadius}
+          outerRadius={outerRadius}
           cornerRadius={30}
           fill={fill}
           dataKey="value"
